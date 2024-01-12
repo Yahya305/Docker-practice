@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+    express:
+        build: ./expressApp
+        ports:
+            - 8000:8000
+        volumes:
+            - ./expressApp/logs:/app/logs
+    todo-app:
+        build: ./todo-app
+        ports:
+            - 3000:3000

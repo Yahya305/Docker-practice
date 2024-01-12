@@ -1,9 +1,0 @@
-version: '3.7'
-
-services:
-  express:
-    build: ./
-    ports:
-      - 8000:8000
-    volumes:
-      - ./data:/app/logs
